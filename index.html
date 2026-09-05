@@ -1,1 +1,614 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Deck - Sinergi KONAMI & Polres Tasikmalaya Kota 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617; /* Slate dark */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5rem;
+            padding: 5rem 2rem;
+            margin: 0;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,0.1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,0) 0, transparent 50%);
+        }
+        
+        .font-heading { font-family: 'Outfit', sans-serif; letter-spacing: -0.02em; }
+        
+        /* Slide Container Fixed 16:9 Proportional for Presentation */
+        .slide-container {
+            width: 960px;
+            height: 540px;
+            background: linear-gradient(135deg, #001533 0%, #020617 100%);
+            color: #f3f4f6;
+            padding: 40px 60px;
+            box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            border-radius: 28px;
+        }
+        
+        .slide-body { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 10; }
+        
+        .slide-footer {
+            margin-top: auto;
+            font-size: 0.65rem;
+            color: #64748b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 204, 0, 0.15);
+            z-index: 10;
+            font-weight: 700;
+        }
+        
+        /* Warna Aksen Otoritas Hukum (Emas & Navy) */
+        .text-konami-gold { color: #FFD700; }
+        .bg-konami-gold { background-color: #FFD700; }
+        .border-konami-gold { border-color: #FFD700; }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+
+        .hero-title { font-size: 4rem; line-height: 0.95; }
+        .sub-title { font-size: 2.2rem; font-weight: 800; color: #FFD700; }
+
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob { animation: blob 15s infinite ease-in-out alternate; }
+
+        table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.75rem; }
+        th { background: rgba(255, 215, 0, 0.1); color: #FFD700; padding: 12px; text-align: left; text-transform: uppercase; letter-spacing: 1px; border-bottom: 2px solid rgba(255,215,0,0.3); }
+        td { padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        tr:last-child td { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: COVER -->
+    <div class="slide-container relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-700 rounded-full mix-blend-screen filter blur-[80px] opacity-20 animate-blob"></div>
+        <div class="slide-body text-center">
+            <div class="flex justify-center mb-6">
+                <div class="bg-konami-gold px-5 py-2 rounded-xl flex items-center gap-3 shadow-xl">
+                    <span class="text-blue-950 font-black text-2xl"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="text-blue-950 font-extrabold text-[11px] tracking-[0.2em] uppercase">Sinergi KONAMI & Polri</span>
+                </div>
+            </div>
+            <h1 class="hero-title font-black uppercase mb-6 font-heading tracking-tighter">
+                KOLABORASI <span class="text-konami-gold italic">KAMTIBMAS</span><br>UNTUK MASYARAKAT
+            </h1>
+            <p class="text-lg text-gray-300 font-light max-w-2xl mx-auto italic mb-10 leading-relaxed">
+                Proposal Program Kesadaran Hukum & Intervensi Sosial di Daerah Rentan Terdampak Kejahatan Terorganisir Kota Tasikmalaya.
+            </p>
+            <div class="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div class="glass-panel p-4 rounded-2xl text-left flex items-center gap-4 border-l-4 border-konami-gold">
+                    <i class="fas fa-location-crosshairs text-konami-gold text-2xl ml-2"></i>
+                    <div>
+                        <p class="text-[9px] text-gray-400 uppercase font-bold tracking-wider">Lokasi Fokus Bina</p>
+                        <p class="text-white font-bold font-heading text-sm">TAMANSARI & CIHIDEUNG</p>
+                    </div>
+                </div>
+                <div class="glass-panel p-4 rounded-2xl text-left flex items-center gap-4">
+                    <i class="fas fa-bullseye text-konami-gold text-2xl ml-2"></i>
+                    <div>
+                        <p class="text-[9px] text-gray-400 uppercase font-bold tracking-wider">Target Audiens Edukasi</p>
+                        <p class="text-white font-bold font-heading text-sm uppercase">Mahasiswa Baru (PMB)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>DOKUMEN PROPOSAL STRATEGIS 2026</span>
+            <span>01 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: BACKGROUND (URGENSI) -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <h2 class="sub-title font-heading mb-2 uppercase tracking-tight">Konteks <span class="text-white">& Urgensi Program</span></h2>
+            <div class="h-1.5 w-24 bg-konami-gold mb-8 rounded-full"></div>
+            <div class="grid grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <p class="text-gray-300 text-[13px] leading-relaxed text-justify">
+                        Kota Tasikmalaya tengah menghadapi tantangan serius terkait gangguan ketertiban masyarakat (Kamtibmas), khususnya aktivitas premanisme dan kriminalitas terorganisir yang berdampak langsung pada perekonomian masyarakat kecil.
+                    </p>
+                    <ul class="space-y-5 text-xs text-gray-400">
+                        <li class="flex gap-4 items-start">
+                            <div class="bg-white/10 p-2 rounded-lg text-konami-gold"><i class="fas fa-chart-line"></i></div>
+                            <div><strong class="text-white text-[13px]">Keresahan Ekonomi Akar Rumput:</strong> Praktik pungli dan ancaman keamanan melumpuhkan roda ekonomi informal di daerah padat penduduk.</div>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <div class="bg-white/10 p-2 rounded-lg text-konami-gold"><i class="fas fa-users-slash"></i></div>
+                            <div><strong class="text-white text-[13px]">Potensi Perekrutan Pemuda:</strong> Kelompok kriminal mengincar pemuda dan mahasiswa baru yang minim literasi hukum sebagai target rekrutmen.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900/40 to-transparent p-8 rounded-3xl border border-blue-500/20 flex flex-col justify-center text-center relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 opacity-[0.03] text-9xl text-white"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <div class="text-konami-gold text-4xl mb-4 drop-shadow-[0_0_15px_rgba(255,215,0,0.4)]"><i class="fas fa-handshake-angle"></i></div>
+                    <p class="text-base font-bold text-white mb-3">Gap Komunikasi Warga & Polri</p>
+                    <p class="text-[11px] text-gray-400 leading-relaxed italic z-10">
+                        "Masyarakat rentan seringkali enggan atau takut melapor. Diperlukan elemen ketiga (Organisasi KONAMI) yang lahir dari rahim rakyat untuk menjadi jembatan fasilitator antara warga dan pihak kepolisian."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Analisis Situasi & Latar Belakang</span>
+            <span>02 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: 3 PILAR UTAMA -->
+    <div class="slide-container">
+        <div class="slide-body text-center">
+            <h2 class="sub-title font-heading mb-4 uppercase">3 Pilar <span class="text-white">Aksi Strategis</span></h2>
+            <p class="text-gray-400 text-sm mb-12 italic">Solusi komprehensif mulai dari hulu (edukasi) hingga hilir (penindakan & bansos).</p>
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Pilar 1 -->
+                <div class="glass-panel p-8 rounded-[2rem] border-t-4 border-t-konami-gold hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-blue-900/50 rounded-2xl flex items-center justify-center text-3xl text-konami-gold mb-5 border border-white/10">
+                        <i class="fa-solid fa-house-chimney-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-black text-white mb-2 font-heading">Posko Pengaduan</h3>
+                    <p class="text-[10px] text-gray-400 leading-relaxed">Fasilitas pelaporan respons cepat bagi masyarakat yang menjadi korban pungli atau ancaman kelompok terorganisir.</p>
+                </div>
+                <!-- Pilar 2 -->
+                <div class="glass-panel p-8 rounded-[2rem] border-t-4 border-t-konami-gold hover:-translate-y-2 transition-transform duration-300 relative">
+                    <div class="absolute top-4 right-4 text-[9px] bg-konami-gold text-blue-950 px-2 py-1 font-black rounded">PREVENTIF</div>
+                    <div class="w-16 h-16 mx-auto bg-blue-900/50 rounded-2xl flex items-center justify-center text-3xl text-konami-gold mb-5 border border-white/10">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-lg font-black text-white mb-2 font-heading">Kuliah Umum PMB</h3>
+                    <p class="text-[10px] text-gray-400 leading-relaxed">Edukasi kesadaran hukum yang diintegrasikan langsung pada kegiatan orientasi mahasiswa baru di kampus-kampus.</p>
+                </div>
+                <!-- Pilar 3 -->
+                <div class="glass-panel p-8 rounded-[2rem] border-t-4 border-t-konami-gold hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-16 h-16 mx-auto bg-blue-900/50 rounded-2xl flex items-center justify-center text-3xl text-konami-gold mb-5 border border-white/10">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-lg font-black text-white mb-2 font-heading">Daerah Binaan</h3>
+                    <p class="text-[10px] text-gray-400 leading-relaxed">Penetapan wilayah rawan (Tamansari & Cihideung) untuk intervensi sosial, pemulihan ekonomi, dan penyaluran bansos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Overview Program Kemitraan</span>
+            <span>03 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: DETAIL POSKO PENGADUAN -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <div class="grid grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-block bg-konami-gold/10 text-konami-gold font-bold px-3 py-1 rounded text-[10px] border border-konami-gold/20">PROGRAM PILAR 1</div>
+                    <h2 class="sub-title font-heading mb-2 uppercase leading-none">LAUNCHING POSKO <br><span class="text-white">PENGADUAN KAMTIBMAS</span></h2>
+                    <div class="h-1.5 w-16 bg-konami-gold rounded-full"></div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Mendirikan pusat komando mini di titik strategis kota. Posko ini dioperasikan bersama oleh relawan KONAMI dan dijaga secara berkala oleh aparat Polres Tasikmalaya Kota.
+                    </p>
+                    <div class="bg-white/5 p-4 rounded-xl border-l-2 border-konami-gold">
+                        <p class="text-[11px] text-white font-semibold mb-1"><i class="fa-solid fa-bolt text-konami-gold mr-2"></i> Quick Response System</p>
+                        <p class="text-[9px] text-gray-400">Setiap laporan dari warga terkait premanisme akan dicatat oleh KONAMI dan langsung diteruskan ke tim patroli presisi Polres untuk tindakan instan (SLA &lt; 15 Menit).</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div class="glass-panel p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center text-white"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <p class="text-[10px] text-konami-gold font-bold uppercase tracking-wider">Lokasi Strategis</p>
+                            <p class="text-sm font-bold text-white">Pusat Keramaian & Pasar</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center text-white"><i class="fa-solid fa-user-secret"></i></div>
+                        <div>
+                            <p class="text-[10px] text-konami-gold font-bold uppercase tracking-wider">Fasilitas Keamanan</p>
+                            <p class="text-sm font-bold text-white">Jaminan Kerahasiaan Pelapor (Anonim)</p>
+                        </div>
+                    </div>
+                    <div class="glass-panel p-5 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center text-white"><i class="fa-solid fa-walkie-talkie"></i></div>
+                        <div>
+                            <p class="text-[10px] text-konami-gold font-bold uppercase tracking-wider">Integrasi Data</p>
+                            <p class="text-sm font-bold text-white">Direct Line ke Command Center Polri</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Fokus Program: Penegakan & Pelayanan</span>
+            <span>04 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: DETAIL KULIAH UMUM PMB -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <div class="inline-block bg-konami-gold/10 text-konami-gold font-bold px-3 py-1 rounded text-[10px] border border-konami-gold/20 mb-3">PROGRAM PILAR 2</div>
+                    <h2 class="sub-title font-heading uppercase leading-none">INTEGRASI KULIAH UMUM <br><span class="text-white">DI KEGIATAN PMB KAMPUS</span></h2>
+                </div>
+                <div class="text-right">
+                    <h3 class="text-5xl font-black text-white font-heading">1.500+</h3>
+                    <p class="text-[10px] text-konami-gold font-bold tracking-widest uppercase">Target Mahasiswa Baru</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-8">
+                <div class="glass-panel p-6 rounded-2xl">
+                    <h4 class="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2"><i class="fa-solid fa-clipboard-list text-konami-gold mr-2"></i>Teknis Pelaksanaan Acara</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-green-400 mt-0.5 text-xs"></i>
+                            <div>
+                                <p class="text-[11px] font-bold text-white">Masuk Rundown Resmi PMB</p>
+                                <p class="text-[9px] text-gray-400 mt-1">Sosialisasi bukan acara terpisah, melainkan wajib diikuti maba pada masa Pengenalan Kehidupan Kampus.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-green-400 mt-0.5 text-xs"></i>
+                            <div>
+                                <p class="text-[11px] font-bold text-white">Pemateri Eksklusif Kepolisian</p>
+                                <p class="text-[9px] text-gray-400 mt-1">Kapolres, Kasat Reskrim, atau Kasat Binmas hadir langsung sebagai narasumber utama di hadapan ribuan maba.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="glass-panel p-6 rounded-2xl bg-gradient-to-br from-white/5 to-transparent">
+                    <h4 class="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2"><i class="fa-solid fa-book-open-reader text-konami-gold mr-2"></i>Materi Kesadaran Hukum</h4>
+                    <div class="space-y-3 text-[11px] text-gray-300">
+                        <div class="bg-black/20 p-2.5 rounded text-left"><strong class="text-white">1. Anti-Kriminalitas:</strong> Bahaya indoktrinasi premanisme & geng motor.</div>
+                        <div class="bg-black/20 p-2.5 rounded text-left"><strong class="text-white">2. Literasi Digital:</strong> Pencegahan kejahatan siber & judol (judi online).</div>
+                        <div class="bg-black/20 p-2.5 rounded text-left"><strong class="text-white">3. Kampus Merdeka dari Narkoba:</strong> Penekanan sanksi hukum berat.</div>
+                        <div class="bg-black/20 p-2.5 rounded text-left"><strong class="text-white">4. Mahasiswa Agen Kamtibmas:</strong> Cara lapor via layanan kepolisian.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Fokus Program: Edukasi Preventif Akademik</span>
+            <span>05 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: DETAIL DAERAH BINAAN -->
+    <div class="slide-container">
+        <div class="slide-body text-center">
+            <div class="inline-block bg-konami-gold/10 text-konami-gold font-bold px-3 py-1 rounded text-[10px] border border-konami-gold/20 mb-3">PROGRAM PILAR 3</div>
+            <h2 class="sub-title font-heading mb-8 uppercase">Zonasi Daerah <span class="text-white">Binaan Khusus</span></h2>
+            
+            <div class="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="glass-panel p-6 rounded-[2rem] border-2 border-white/5 relative overflow-hidden group hover:border-konami-gold/50 transition-colors">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-[8px] font-black px-3 py-1 rounded-bl-xl">ZONA KERAWANAN EKONOMI</div>
+                    <div class="text-5xl text-gray-600 group-hover:text-konami-gold transition-colors mb-4"><i class="fa-solid fa-map"></i></div>
+                    <h3 class="text-2xl font-black text-white font-heading uppercase mb-2">Kec. Cihideung</h3>
+                    <p class="text-[11px] text-gray-400 mb-4 h-16">Pusat niaga kota yang padat. Fokus pada pembebasan pedagang kaki lima dan pekerja informal dari jerat premanisme pungli jalanan yang sistematis.</p>
+                    <div class="border-t border-white/10 pt-3 flex flex-wrap gap-2 justify-center">
+                        <span class="text-[8px] bg-white/10 px-2 py-1 rounded text-gray-300">Patroli Dialogis</span>
+                        <span class="text-[8px] bg-white/10 px-2 py-1 rounded text-gray-300">Perlindungan PKL</span>
+                    </div>
+                </div>
+                
+                <div class="glass-panel p-6 rounded-[2rem] border-2 border-white/5 relative overflow-hidden group hover:border-konami-gold/50 transition-colors">
+                    <div class="absolute top-0 right-0 bg-orange-500 text-white text-[8px] font-black px-3 py-1 rounded-bl-xl">ZONA KERAWANAN SOSIAL</div>
+                    <div class="text-5xl text-gray-600 group-hover:text-konami-gold transition-colors mb-4"><i class="fa-solid fa-mountain-city"></i></div>
+                    <h3 class="text-2xl font-black text-white font-heading uppercase mb-2">Kec. Tamansari</h3>
+                    <p class="text-[11px] text-gray-400 mb-4 h-16">Area suburban dengan potensi gesekan sosial pemuda. Fokus pada pemberdayaan pemuda pengangguran dan pengaktifan kembali Siskamling warga.</p>
+                    <div class="border-t border-white/10 pt-3 flex flex-wrap gap-2 justify-center">
+                        <span class="text-[8px] bg-white/10 px-2 py-1 rounded text-gray-300">Bina Karang Taruna</span>
+                        <span class="text-[8px] bg-white/10 px-2 py-1 rounded text-gray-300">Aktivasi Siskamling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Fokus Program: Intervensi Lingkungan Spesifik</span>
+            <span>06 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: BANTUAN SOSIAL BANSOS -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <div class="grid grid-cols-2 gap-10 items-center">
+                <div class="glass-panel p-8 rounded-3xl text-center relative overflow-hidden border border-konami-gold/30 shadow-[0_0_30px_rgba(255,215,0,0.1)]">
+                    <div class="absolute -right-8 -top-8 text-8xl text-konami-gold/10"><i class="fa-solid fa-box-open"></i></div>
+                    <h3 class="text-6xl font-black text-white font-heading mb-2">500+</h3>
+                    <p class="text-xs text-konami-gold font-bold uppercase tracking-widest mb-6">Paket Sembako & Pemulihan</p>
+                    <div class="bg-black/30 p-4 rounded-xl text-left">
+                        <p class="text-[10px] text-gray-300 italic">"Tidak hanya penegakan hukum, Polri dan KONAMI hadir dengan pendekatan humanis untuk meringankan beban warga yang sempat terpuruk akibat gangguan kamtibmas."</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="sub-title font-heading mb-4 uppercase leading-tight">Penyaluran <span class="text-white"><br>Bantuan Sosial</span></h2>
+                    <div class="h-1 w-16 bg-konami-gold mb-6"></div>
+                    <p class="text-[12px] text-gray-300 leading-relaxed mb-6">
+                        Sebagai pelengkap intervensi di daerah binaan, program ini mencakup pendistribusian Bantuan Sosial (Bansos) bahan pangan pokok yang ditargetkan khusus bagi:
+                    </p>
+                    <ul class="space-y-4 text-xs">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-hand-holding-dollar text-konami-gold text-lg"></i>
+                            <span class="text-white">Pedagang kecil korban pungli di Cihideung.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-house-chimney-crack text-konami-gold text-lg"></i>
+                            <span class="text-white">Keluarga prasejahtera di Tamansari.</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-users-viewfinder text-konami-gold text-lg"></i>
+                            <span class="text-white">Data by-name by-address hasil validasi tim relawan KONAMI.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Fokus Program: Pemulihan Ekonomi Humanis</span>
+            <span>07 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: ROADMAP & TIMELINE -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <h2 class="sub-title font-heading mb-8 uppercase text-center">Linimasa <span class="text-white">Pelaksanaan 2026</span></h2>
+            
+            <div class="relative w-full max-w-4xl mx-auto mt-6">
+                <!-- Line -->
+                <div class="absolute top-1/2 left-0 w-full h-1 bg-white/10 -translate-y-1/2 rounded-full"></div>
+                
+                <div class="grid grid-cols-4 gap-4 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="text-center">
+                        <div class="w-10 h-10 mx-auto bg-blue-900 border-4 border-konami-gold rounded-full flex items-center justify-center text-white text-xs font-bold mb-3 shadow-[0_0_15px_rgba(255,215,0,0.5)]">1</div>
+                        <h4 class="text-[11px] font-bold text-konami-gold uppercase mb-1">Juli 2026</h4>
+                        <div class="glass-panel p-3 rounded-xl">
+                            <p class="text-[10px] text-white font-bold mb-1">Rapat Koordinasi</p>
+                            <p class="text-[8px] text-gray-400 leading-tight">Audiensi dengan Kapolres & mapping data intelijen wilayah.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center mt-8">
+                        <div class="w-10 h-10 mx-auto bg-blue-900 border-4 border-konami-gold rounded-full flex items-center justify-center text-white text-xs font-bold mb-3">2</div>
+                        <h4 class="text-[11px] font-bold text-konami-gold uppercase mb-1">Agustus 2026</h4>
+                        <div class="glass-panel p-3 rounded-xl border-konami-gold/30">
+                            <p class="text-[10px] text-white font-bold mb-1">PMB Kampus</p>
+                            <p class="text-[8px] text-gray-400 leading-tight">Eksekusi roadshow Kuliah Umum ke 5 Universitas di Tasikmalaya.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center">
+                        <div class="w-10 h-10 mx-auto bg-blue-900 border-4 border-konami-gold rounded-full flex items-center justify-center text-white text-xs font-bold mb-3 shadow-[0_0_15px_rgba(255,215,0,0.5)]">3</div>
+                        <h4 class="text-[11px] font-bold text-konami-gold uppercase mb-1">September 2026</h4>
+                        <div class="glass-panel p-3 rounded-xl">
+                            <p class="text-[10px] text-white font-bold mb-1">Grand Launching</p>
+                            <p class="text-[8px] text-gray-400 leading-tight">Peresmian Posko Pengaduan Kamtibmas terpusat di pusat kota.</p>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="text-center mt-8">
+                        <div class="w-10 h-10 mx-auto bg-blue-900 border-4 border-white/20 rounded-full flex items-center justify-center text-white text-xs font-bold mb-3">4</div>
+                        <h4 class="text-[11px] font-bold text-white uppercase mb-1">Okt - Nov 2026</h4>
+                        <div class="glass-panel p-3 rounded-xl">
+                            <p class="text-[10px] text-white font-bold mb-1">Bina Wilayah & Bansos</p>
+                            <p class="text-[8px] text-gray-400 leading-tight">Distribusi 500 paket bansos & evaluasi keamanan Tamansari-Cihideung.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Roadmap & Timeline Implementasi</span>
+            <span>08 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: BUDGET 1 -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <h2 class="sub-title font-heading mb-6 uppercase">Estimasi Anggaran <span class="text-white">(Tahap 1)</span></h2>
+            <div class="glass-panel rounded-2xl overflow-hidden p-1">
+                <table>
+                    <thead>
+                        <tr><th class="w-1/2">Pos Pembiayaan Operasional Edukasi</th><th class="w-1/4">Volume</th><th class="w-1/4 text-right">Total (IDR)</th></tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr>
+                            <td>
+                                <strong class="text-white text-[11px]">Roadshow Kuliah Umum PMB</strong><br>
+                                <span class="text-[9px] text-gray-500">Logistik acara di 5 kampus, modul hukum, sertifikat, & plakat penghargaan.</span>
+                            </td>
+                            <td>5 Kampus</td>
+                            <td class="text-right font-mono">15.500.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="text-white text-[11px]">Setup Posko Pengaduan Kamtibmas</strong><br>
+                                <span class="text-[9px] text-gray-500">Sewa lahan/tenda peleton, instalasi listrik, alat komunikasi (HT), & furnitur.</span>
+                            </td>
+                            <td>2 Titik</td>
+                            <td class="text-right font-mono">22.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="text-white text-[11px]">Kampanye & Publikasi Media</strong><br>
+                                <span class="text-[9px] text-gray-500">Baliho himbauan kamtibmas, spanduk anti-premanisme, & publikasi media cetak/online.</span>
+                            </td>
+                            <td>1 Paket</td>
+                            <td class="text-right font-mono">12.500.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Rencana Anggaran Biaya - Operasional & Edukasi</span>
+            <span>09 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 10: BUDGET 2 & TOTAL -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <h2 class="sub-title font-heading mb-6 uppercase">Estimasi Anggaran <span class="text-white">(Tahap 2)</span></h2>
+            <div class="glass-panel rounded-2xl overflow-hidden p-1">
+                <table>
+                    <thead>
+                        <tr><th class="w-1/2">Pos Pembiayaan Bantuan Sosial</th><th class="w-1/4">Volume</th><th class="w-1/4 text-right">Total (IDR)</th></tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr>
+                            <td>
+                                <strong class="text-white text-[11px]">Pengadaan Paket Sembako (Bansos)</strong><br>
+                                <span class="text-[9px] text-gray-500">Beras 5kg, Minyak, Gula, dll (@Rp 100.000) untuk Tamansari & Cihideung.</span>
+                            </td>
+                            <td>500 Paket</td>
+                            <td class="text-right font-mono">50.000.000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong class="text-white text-[11px]">Operasional Penyaluran & Pengamanan</strong><br>
+                                <span class="text-[9px] text-gray-500">Sewa truk armada, konsumsi relawan lapangan & aparat pendamping.</span>
+                            </td>
+                            <td>2 Hari</td>
+                            <td class="text-right font-mono">5.000.000</td>
+                        </tr>
+                        <tr class="bg-blue-900/50">
+                            <td colspan="2" class="text-right text-konami-gold font-bold uppercase text-xs">Total Kebutuhan Dukungan Dana</td>
+                            <td class="text-right font-mono font-black text-konami-gold text-sm shadow-[0_0_10px_rgba(255,215,0,0.2)]">105.000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-[9px] text-gray-400 mt-4 italic text-center">*Anggaran bersifat estimasi dan dapat disesuaikan dengan skema subsidi silang atau dukungan CSR korporasi daerah yang difasilitasi oleh instansi kepolisian.</p>
+        </div>
+        <div class="slide-footer">
+            <span>Rencana Anggaran Biaya - Bansos & Grand Total</span>
+            <span>10 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 11: MATRIKS PERAN -->
+    <div class="slide-container">
+        <div class="slide-body">
+            <h2 class="sub-title font-heading mb-6 uppercase text-center">Matriks <span class="text-white">Tanggung Jawab</span></h2>
+            <div class="grid grid-cols-2 gap-6 h-full">
+                <div class="bg-white/5 rounded-[2rem] p-6 border-t-8 border-konami-gold flex flex-col">
+                    <div class="flex items-center gap-3 mb-4 border-b border-white/10 pb-3">
+                        <div class="w-10 h-10 bg-konami-gold rounded-full flex items-center justify-center text-blue-950 text-xl"><i class="fa-solid fa-users"></i></div>
+                        <h3 class="text-lg font-black text-white font-heading uppercase">Tugas KONAMI</h3>
+                    </div>
+                    <ul class="space-y-3 text-[11px] text-gray-300 flex-grow">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-konami-gold mt-1"></i> Menyediakan relawan jaga Posko Pengaduan.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-konami-gold mt-1"></i> Melobi pihak Rektorat Kampus untuk jadwal PMB.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-konami-gold mt-1"></i> Melakukan validasi data penerima Bansos di lapangan.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-konami-gold mt-1"></i> Manajemen event, logistik, dan pelaporan (LPJ).</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white/5 rounded-[2rem] p-6 border-t-8 border-blue-500 flex flex-col">
+                    <div class="flex items-center gap-3 mb-4 border-b border-white/10 pb-3">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="text-lg font-black text-white font-heading uppercase">Tugas POLRES TASIK</h3>
+                    </div>
+                    <ul class="space-y-3 text-[11px] text-gray-300 flex-grow">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-blue-400 mt-1"></i> Tindak lanjut hukum (Quick Response) dari aduan posko.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-blue-400 mt-1"></i> Menugaskan Perwira sebagai narasumber Kuliah Umum.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-blue-400 mt-1"></i> Pengawalan distribusi Bansos oleh Bhabinkamtibmas.</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-caret-right text-blue-400 mt-1"></i> Legalitas program dan arahan strategis intelijen.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span>Pembagian Peran (KONAMI & Kepolisian)</span>
+            <span>11 / 12</span>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: CLOSING & KONTAK -->
+    <div class="slide-container relative overflow-hidden">
+        <div class="absolute inset-0 bg-blue-900/20 mix-blend-multiply"></div>
+        <div class="slide-body grid grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 class="text-5xl font-black text-white mb-6 font-heading leading-none uppercase italic tracking-tighter">WAKTUNYA <br><span class="text-konami-gold">BERSINERGI!</span></h2>
+                <p class="text-gray-400 mb-10 text-[13px] leading-relaxed max-w-sm text-justify">
+                    Kemitraan antara Polri dan elemen pemuda (KONAMI) adalah pilar penting untuk menciptakan Kota Tasikmalaya yang aman, berkeadilan, dan peduli sesama. Mari wujudkan visi ini bersama, karena keamanan adalah tanggung jawab kita semua.
+                </p>
+                <a href="#" class="bg-konami-gold text-blue-950 px-8 py-3 rounded-xl font-black shadow-lg hover:scale-105 transition font-heading text-lg inline-flex items-center gap-3">
+                    <i class="fa-solid fa-file-signature text-xl"></i> TANDA TANGANI MOU
+                </a>
+            </div>
+            <div class="bg-black/40 p-8 rounded-[2.5rem] border border-white/10 backdrop-blur-3xl space-y-6 shadow-2xl">
+                <div class="text-center mb-6 border-b border-white/10 pb-4">
+                    <p class="text-xs text-konami-gold font-black uppercase tracking-widest mb-1">Pusat Informasi Kolaborasi</p>
+                    <p class="text-lg text-white font-heading font-bold">Sekretariat KONAMI Tasikmalaya</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-konami-gold text-xl border border-white/5"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <p class="text-[9px] text-gray-500 uppercase font-bold mb-1">Hotline Kemitraan</p>
+                        <p class="text-white font-mono font-bold text-xl tracking-tighter">0812-XXXX-XXXX</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-blue-400 text-xl border border-white/5"><i class="fa-brands fa-instagram"></i></div>
+                    <div>
+                        <p class="text-[9px] text-gray-500 uppercase font-bold mb-1">Media Sosial</p>
+                        <p class="text-white font-mono font-bold text-lg leading-none">@konamitasikmalaya</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center text-white text-xl border border-white/5"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <p class="text-[9px] text-gray-500 uppercase font-bold mb-1">Surel Resmi</p>
+                        <p class="text-white font-mono font-bold text-xs uppercase tracking-tight">kemitraan@konami-tasik.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-footer">
+            <span class="italic font-black tracking-wider">"KOLABORASI PEMUDA & POLRI UNTUK MASYARAKAT"</span>
+            <span>12 / 12</span>
+        </div>
+    </div>
+
+</body>
+</html>
